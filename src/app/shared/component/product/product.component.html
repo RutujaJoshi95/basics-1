@@ -1,7 +1,44 @@
 
-<p class="alert alert-info">
-    The product name is 
-    {{productName}}
-    and with id 
-    {{productId}}
+<!-- for number format
+ <h3>{{productComapany}}</h3>
+<p 
+    *ngFor="let product of proArr;  let i = index"
+>
+  {{i + 1}}  The Model name is 
+    <strong>{{product.productName}}</strong>
+     with id 
+    <strong>{{product.productId}}</strong>
 </p>
+
+<h3>{{productComapany1}}</h3>
+<p 
+    *ngFor="let product of proArr1;  let i = index"
+>
+  {{i + 1}}  The Model name is 
+    <strong>{{product.productName}}</strong>
+     with id 
+    <strong>{{product.productId}}</strong>
+</p> -->
+<!-- for number = index
+     for bullet = ul li
+     for bold = strong  -->
+
+<h3 class="alert alert-success" >{{ productComapany }}</h3>
+<ul>
+  <li *ngFor="let product of proArr">
+    The Model name is 
+    <strong>{{ product.productName }}</strong> 
+    with id 
+    <strong>{{ product.productId }}</strong>
+  </li>
+</ul>
+
+<h3 class="alert alert-success" >{{ productComapany1 }}</h3>
+<ul>
+  <li *ngFor="let product of proArr1">
+    The Model name is 
+    <strong>{{ product.productName }}</strong> 
+    with id 
+    <strong>{{ product.productId }}</strong>
+  </li>
+</ul>
